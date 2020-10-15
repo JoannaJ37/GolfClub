@@ -1,0 +1,436 @@
+* {
+     box-sizing: border-box;
+}
+.container {
+     width: 100%;
+     background-color: white;
+     color: black;
+     margin: 0 auto;
+     font-family: Lucida;
+
+}
+
+/* H E A D E R    S T Y L I N G */
+a { 
+     text-decoration: none;
+}
+.header {
+     background-color: white;
+}
+
+.options { 
+     text-align: right;
+     padding: 5px 40px;
+     font-size: 12px;
+}
+.options .p { 
+     line-height: 5px;
+}
+
+#search { 
+     display: flex;
+     justify-content: flex-end;
+}
+#search-text-input{
+     border-top:thin solid  #535353;
+     border-right:thin solid #535353;
+     border-bottom:0;
+     border-left:thin solid  #535353;
+     box-shadow:1px 1px 1px 1px #535353;
+     float:left;
+     height:20px;
+     margin: 0; 
+     outline:0;
+     padding:.4em 0 .4em .6em; 
+
+    }
+   
+ #button-holder{
+     background-color:white;
+     border-top:thin solid  white;
+     border-right:thin solid white;
+     border-bottom:0;
+     border-left:thin solid  white;
+     box-shadow:1px 1px 1px 1px white;
+     cursor:pointer;
+     float:right;
+     height:20px;
+     outline: 0;
+     margin: 0 0 0 0;
+     padding:.4em 0 .4em .6em; 
+     /*margin: 5px 5px;*/
+     width:20px;
+ }
+   
+ #button-holder img{
+     width:20px;
+     background-color:white;
+ }
+
+
+.logo {
+     background-image: url("images/logo.PNG");
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 20vh;
+}
+
+nav {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     grid-auto-rows: auto;
+     grid-gap: 0;
+     height: 50px;
+     align-items: center;
+     text-align: center;
+     background: white;
+     padding-bottom: 20px;
+}
+
+.footer { 
+     background-color: #535353;
+}
+footer nav {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     grid-auto-rows: auto;
+     grid-gap: 1em;
+     align-items: center;
+     text-align: center;
+     background:#535353;
+}
+footer img { 
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+.navText {
+     font-family: 'Lucida';
+     font-size: 1.2em;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #808080;
+     
+}
+
+.navLinks { 
+     background-color:white;
+     margin: 0 5px;
+     padding: 8px;
+     height: 50px;
+
+}
+.navLinks1 {
+     font-family: 'Lucida';
+     font-size: 0.8em;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #808080;
+}
+
+.aside {
+     grid-area: aside;
+     grid-template-rows: repeat(9, 1fr);
+     grid-auto-columns: auto;
+     color: white;
+     padding: 5px 40px;
+}
+
+.aside .link { 
+     border-bottom: 1px solid white;
+     text-align: left;
+}
+
+.section { 
+     grid-area: section;
+     width:327px;
+}
+
+
+.main {
+     display: grid;
+     grid-template-areas:
+     'item0 item0 item0 item0 item0'
+     'item1 item1 item1 item1 item1'
+     'item2 item2 item2 item2 item2'
+     'item3 item3 item3 item3 item3'
+     'item4 item4 item4 item4 item4'
+     'item5 item5 item5 item5 item5'
+     'item6 item6 item6 item6 item6'
+     'item7 item7 item7 item7 item7';
+
+     grid-gap: 20px;
+     background-color:white;
+     padding: 5px;
+     text-align: center;
+     color: #808080;
+}
+
+
+.item {
+     
+     background-color: white;
+}
+
+.item h1{
+     text-transform: uppercase;
+     font-weight: lighter;
+     font-size: 24px;
+}
+
+.item h3 {
+     text-transform: uppercase;
+     font-size: 20px;
+     text-align: left;
+     padding: 5px 40px;
+}
+.item h5 {
+     text-transform: uppercase;
+     font-weight: lighter;
+     font-size: 18px;
+     padding: 5px 50px;
+}
+.item p {
+     text-align:justify;
+     padding: 5px 40px;
+     font-size: 14px;
+
+}
+
+.item p#przypis {
+     font-size:8px;
+     text-align:left;
+}
+.item p .link {
+     padding-top: 0;
+     padding-left: 20px;
+}
+.link a { 
+     color: green;
+     font-size: 14px;
+     text-align:right;
+}
+.post {
+     display:grid;
+     grid-template-columns: 2fr 6fr;
+     grid-auto-rows: auto;
+     background: white;
+     padding: 2px;
+     border-bottom: 1px solid #808080;
+}
+
+.post .details {
+     text-align: left;
+     padding: 0 0;
+}
+.post .details h4 {
+     font-weight: bold;
+}
+
+
+table {
+     width: 100%;
+     padding: 5px 40px;
+}
+
+tr, td {
+     text-align: left;
+     border-bottom:1px solid #ddd;
+     height: 30px;
+}
+tr#top-row {
+     text-transform: uppercase;
+     font-weight: lighter;
+     font-weight: bold;
+}
+/*S L I D E S H O W    S T Y L I N G */
+.slideshow-cont{
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+   }
+
+.mySlides {
+     display: none;
+}
+
+.prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+   }
+
+/* Position the "next button" to the right */
+.next {
+     right: 15%;
+     border-radius: 3px 0 0 3px;
+   }
+
+.prev { 
+     left: 15%;
+}
+ /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+}
+   
+/* The dots/bullets/indicators */
+.dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+}
+   
+.active, .dot:hover {
+     background-color: #717171;
+}
+   
+/* Fading animation */
+.fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+   
+@-webkit-keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+}
+   
+@keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+}
+
+/* END OF S T Y L I N G  S L I D E S H O W */ 
+
+
+
+.division { 
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     grid-auto-rows: auto;
+     align-items: top;
+     text-align: left;
+     background: white;
+     padding: 0 auto;
+     
+}
+.division1 { 
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 3fr 2fr;
+     align-items: top;
+     text-align: left;
+     background-color: #008B8B;
+     color: white;
+     padding: 0 auto;
+     
+}
+.division2 { 
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     grid-auto-rows: auto;
+     align-items: top;
+     text-align: left;
+     padding: 0 auto;
+     
+}
+ul {
+     font-size: 14px;
+     padding: 5px 40px;
+}
+img { 
+     max-width: 80%;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0 10%;
+     padding-bottom: 10px;
+}
+
+.division p { 
+     font-size: 18px;
+     padding-bottom: 5px;
+     font-weight: 500;
+}
+
+.month {
+     border-bottom: 2px solid white;
+}
+
+#item0 {
+     grid-area: item0;
+     display: grid;
+     grid-template-areas:
+     '. . . . . . .'
+     '. . . . . section section'
+     'aside . . . . section section'
+     'aside . . . . . .'
+     'aside . . . . . .'
+     'aside . . . . . .'
+     'aside . . . . . .'
+     '. . . . . . .';
+     background-image: url(images/zdjecie4.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 500px;
+}
+#item1 {
+     grid-area: item1;
+}
+#item2 {
+     grid-area: item2;
+     background-image: url("images/zdjecie2.jpg");
+     background-color: red;
+     opacity: 0.8;
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: white;
+     
+}
+#item3 {
+     grid-area: item3;
+     background-color: white;
+     
+}
+#item4 {
+     grid-area: item4;
+     background-color: #008B8B;
+     color:white;
+
+}
+#item5 {
+     grid-area: item5;
+     background-color: white;
+    
+}
+#item6 {
+     grid-area: item6;
+     background-image: url(images/zdjecie1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 500px;
+     color:white;
+}
+#item7 {
+     grid-area: item7;
+     background-color: white;
+     
+}
